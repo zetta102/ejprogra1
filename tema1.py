@@ -21,8 +21,6 @@ def ejercicio1_2(dia, mes, ano):
             return False
         case 29 if mes == 2 and not es_bisiesto(ano):
             return False
-        case 28 if mes == 2 and es_bisiesto(ano):
-            return False
         case _:
             return True
 
