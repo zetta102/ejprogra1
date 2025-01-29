@@ -17,7 +17,7 @@ def ejercicio1_2(dia, mes, ano):
     match dia:
         case 31 if mes not in [1, 3, 5, 7, 8, 10, 12]:
             return False
-        case 30 if mes not in [4, 6, 9, 11]:
+        case 30 if mes == 2:
             return False
         case 29 if mes == 2 and not es_bisiesto(ano):
             return False
