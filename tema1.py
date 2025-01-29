@@ -15,16 +15,16 @@ def ejercicio1_2(dia, mes, ano):
         return False
 
     match dia:
-        case 31 if mes in [1, 3, 5, 7, 8, 10, 12]:
-            return True
-        case 30 if mes in [4, 6, 9, 11]:
-            return True
-        case 29 if mes == 2 and es_bisiesto(ano):
-            return True
-        case 28 if mes == 2 and not es_bisiesto(ano):
-            return True
-        case _:
+        case 31 if mes not in [1, 3, 5, 7, 8, 10, 12]:
             return False
+        case 30 if mes not in [4, 6, 9, 11]:
+            return False
+        case 29 if mes == 2 and not es_bisiesto(ano):
+            return False
+        case 28 if mes == 2 and es_bisiesto(ano):
+            return False
+        case _:
+            return True
 
 
 def ejercicio1_7_diasiguiente(dia, mes, ano):
