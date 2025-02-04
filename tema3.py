@@ -12,7 +12,7 @@ def ejercicio_2_11():
 
     pacientes_por_urgencias = [fila[0] for fila in lista_pacientes if fila[1] == 0]
     print(f"Pacientes atendidos por urgencias: {pacientes_por_urgencias}")
-    pacientes_por_turnos = [fila[0] for fila in lista_pacientes if fila[1] - - 1]
+    pacientes_por_turnos = [fila[0] for fila in lista_pacientes if fila[1] == 1]
     print(f"Pacientes atendidos por turnos: {pacientes_por_turnos}")
 
     num_afiliado = int(input("Ingrese el numero de afiliado de 4 digitos cuya informaciòn desea buscar: "))
