@@ -7,11 +7,13 @@ def ejercicio_2_2_a(numero_elementos):
         lista_elementos.append(randint(1, 100))
     return lista_elementos
 
+
 def ejercicio_2_2_b(lista_elementos):
     for i in range(len(lista_elementos)):
         if lista_elementos.count(lista_elementos[i]) > 1:
             return True
     return False
+
 
 def ejercicio_2_2_c(lista_elementos):
     nueva_lista = []

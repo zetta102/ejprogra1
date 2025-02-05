@@ -102,7 +102,8 @@ def ejercicio_3_5(n):
     cargar_sala(matriz)
     butaca = input("Introduzca la butaca a buscar, en el formato numero de fila + letra. P. ej. C2: ")
     resultado_reseva = reservar(matriz, butaca)
-    print(f"Se ha reservado exitosamente la butaca {butaca}" if resultado_reseva else f"No se pudo resevar la butaca {butaca}")
+    print(
+        f"Se ha reservado exitosamente la butaca {butaca}" if resultado_reseva else f"No se pudo resevar la butaca {butaca}")
     butaca_libre = butacas_contiguas_libres(matriz)
     print(f"La mayor cantidad de butacas libres se encuentran a partir de la butaca: {butaca_libre}")
     imprimirMatriz(matriz)
